@@ -17,9 +17,22 @@
   --font-size-xl: 1.5rem;
   --font-size-2xl: 2rem;
   --line-height: 1.6;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: var(--font-family);
   font-size: var(--font-size-base);
   line-height: var(--line-height);
@@ -29,14 +42,32 @@ body {
 
 h1 {
   font-size: var(--font-size-2xl);
+  margin: 0 0 var(--space-3);
 }
 
 h2 {
   font-size: var(--font-size-xl);
+  margin: 0 0 var(--space-3);
 }
 
 h3 {
   font-size: var(--font-size-lg);
+  margin: 0 0 var(--space-2);
+}
+
+p {
+  margin: 0 0 var(--space-3);
+}
+
+ul {
+  margin: 0 0 var(--space-3);
+  padding-left: var(--space-5);
+}
+
+header,
+nav,
+section {
+  padding: var(--space-3);
 }
 
 a {
