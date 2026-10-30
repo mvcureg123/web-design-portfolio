@@ -8,11 +8,35 @@
   --color-primary-hover: #ffd166;
   --color-on-primary: #400202;
   --color-border: #8f2a2a;
+
+  /* Type scale */
+  --font-family: Arial, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --line-height: 1.6;
 }
 
 body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
   color: var(--color-text);
   background: var(--color-background);
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
 }
 
 a {
