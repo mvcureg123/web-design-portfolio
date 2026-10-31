@@ -40,7 +40,7 @@ body {
   background: var(--color-background);
 }
 
-/* NEW: page layout (Flexbox, one direction: top to bottom) */
+/* Page layout (Flexbox, one direction: top to bottom) */
 body {
   display: flex;
   flex-direction: column;
@@ -116,11 +116,23 @@ nav a:focus {
   outline-offset: 2px;
 }
 
-/* NEW: contact form (Flexbox, one direction: fields stacked) */
+/* Contact form (Flexbox, one direction: fields stacked) */
 form {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+}
+
+/* NEW: card grid (CSS Grid, rows and columns) */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  padding: var(--space-3);
+}
+
+.card-grid .card {
+  margin-bottom: 0;
 }
 
 /* Components */
